@@ -92,7 +92,6 @@ img {
 /* ====== NAVBAR ========= */
 /* rem=16px*/
 nav {
-   /*  background-color: red; */
     width: 100vw;
     height: 5rem; 
     position: fixed;
@@ -134,7 +133,7 @@ header {
     position: relative;
     top: 5rem;
     overflow: hidden;
-    height: 70vh;
+    height: 50vh;
     margin-bottom: 5rem;
 }
 
@@ -155,9 +154,10 @@ header {
 
 }
 
-.categories h1 {
+.categories h2 {
     line-height: 1;
     margin-bottom: 3rem;
+    text-align: left;
 }
 
 .categories__container {
@@ -214,6 +214,83 @@ header {
     margin: 2rem 0 1rem;
 }
 
-.category p {
+.category p { 
     font-size: 0.85rem;
+}
+/* ====== POPULAR COURSES ========= */
+
+.courses {
+    margin-top: 10rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.course {
+    background: var(--color-bg1);
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.course:hover {
+    background: transparent;
+    border-color: var(--color-primary)
+}
+
+.course__info {
+    padding: 4rem;  
+}
+
+.course__info p {
+    margin: 2rem 0 2rem;
+    font-size: 0.9rem;
+}
+
+.courses h1{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+/*===== FAQs===== */
+.faqs {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+
+.faqs_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+}
+
+.faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+}
+
+.faq p {
+    margin-top: 0.2rem;
+    display: none
+}
+
+.faq.open p {
+    display: block; 
 }
