@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <!--swiper js-->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
@@ -216,12 +222,109 @@
 
   </div>
 </section>
+<!--===========END OF FAQS-->
+
+<section class="container testimonials_container mySwiper">
+  <h2>Students's testimonials</h2>
+  <div class="swiper-wrapper"> 
+    <article class="testimonial swiper-slide">
+      <div class="avatar">
+        <img src="/images/avatar1.jpg">
+      </div>
+      <div class="testimonial_info">
+        <h5>Omar Khan</h5>
+        <small>Software Developer</small>
+      </div>
+      <div class="testimonial_body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis tempor auctor. Vestibulum at velit a nisi rutrum interdum. Proin tempus non mauris eu ultricies.</p>
+      </div>
+    </article>
+
+    <article class="testimonial swiper-slide">
+      <div class="avatar">
+        <img src="/images/avatar2.jpg">
+      </div>
+      <div class="testimonial_info">
+        <h5>Sofia Rodriguez</h5>
+        <small>UX/UI Designer</small>
+      </div>
+      <div class="testimonial_body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis tempor auctor. Vestibulum at velit a nisi rutrum interdum. Proin tempus non mauris eu ultricies.</p>
+      </div>
+    </article>
+
+    <article class="testimonial swiper-slide">
+      <div class="avatar">
+        <img src="/images/avatar3.jpg">
+      </div>
+      <div class="testimonial_info">
+        <h5>Minh Nguyen</h5>
+        <small>Network Administrator</small>
+      </div>
+      <div class="testimonial_body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis tempor auctor. Vestibulum at velit a nisi rutrum interdum. Proin tempus non mauris eu ultricies.</p>
+      </div>
+    </article>
+
+    <article class="testimonial swiper-slide">
+      <div class="avatar">
+        <img src="/images/avatar4.jpg">
+      </div>
+      <div class="testimonial_info">
+        <h5>Evelyn Jones</h5>
+        <small>Chief Information Officer</small>
+      </div>
+      <div class="testimonial_body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis tempor auctor. Vestibulum at velit a nisi rutrum interdum. Proin tempus non mauris eu ultricies.</p>
+      </div>
+    </article>
+
+    <article class="testimonial swiper-slide">
+      <div class="avatar">
+        <img src="/images/avatar5.jpg">
+      </div>
+      <div class="testimonial_info">
+        <h5>Chloe Bennet</h5>
+        <small>Cloud Architect</small>
+      </div>
+      <div class="testimonial_body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis tempor auctor. Vestibulum at velit a nisi rutrum interdum. Proin tempus non mauris eu ultricies.</p>
+      </div>
+    </article>
 
 
+    <article class="testimonial swiper-slide">
+      <div class="avatar">
+        <img src="/images/avatar6.jpg">
+      </div>
+      <div class="testimonial_info">
+        <h5>Noah Chen</h5>
+        <small>Machine Learning Engineer</small>
+      </div>
+      <div class="testimonial_body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut venenatis tempor auctor. Vestibulum at velit a nisi rutrum interdum. Proin tempus non mauris eu ultricies.</p>
+      </div>
+    </article>
+  </div>
+
+</section>
 
 
 <!--Script-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./main.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
 </body>
 </html>
 
