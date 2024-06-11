@@ -156,3 +156,19 @@ img {
     }
 
 }
+
+
+/* ===== media queries tablets===*/
+@media screen and (max-width:600px) {
+    .about__achievements { 
+        margin-top: 2rem;
+    }
+    .teams_container {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+    
+     .team_member {
+            padding: 1rem;
+        }
+    }
