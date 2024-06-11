@@ -1,0 +1,4 @@
+.phone {
+    grid-template-columns: 1fr 1fr;
+    gap: 13rem;
+}
