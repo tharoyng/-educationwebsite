@@ -8,6 +8,9 @@
     margin: 7rem auto;
     border-radius: 1rem;
 }
+.contact {
+    margin-bottom: 7rem;
+}
 
 /*====== aside========*/
 .contact_aside {
@@ -57,3 +60,58 @@
 
 
 /*====== FORM ========*/
+ .contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form_name {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact_form input[type="text"]{
+    width: 50%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+} 
+
+ .contact_form .btn {
+    margin-top: 1rem;
+    cursor: pointer;
+} 
+
+
+/*========media queries= 1024px======*/
+@media screen and (max-width:1024px) {
+   .contact {
+        margin-bottom: -7rem;
+    }
+    .contact__container {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        height: auto;
+        padding: 2rem; 
+    }
+
+      .contact_aside {
+        width: auto;
+        padding: 1.5rem;
+        bottom: 0;
+    }  
+
+    .contact_form {
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+    .contact_aside h3 {
+        padding-top: 2rem;;
+    }
+}
