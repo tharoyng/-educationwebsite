@@ -132,8 +132,8 @@ nav button {
 header {
     position: relative;
     top: 5rem;
-    overflow: hidden;
-    height: 50vh;
+    overflow: auto;
+    min-height: 70vh; 
     margin-bottom: 5rem;
 }
 
@@ -141,12 +141,19 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    height: 100%;
     gap: 5rem;
 }
-.header__left p {
-    margin: 1rem 0 2.4rem;
+
+.header__left, .header__right {
+    flex: 1;
+    min-width: 300px; /* Ensure elements shrink appropriately on smaller screens */
 }
 
+
+.header__left p { 
+    margin: 1rem 0 2.4rem;
+}
 /*====== categories========*/
 .categories {
     background: var(--color-bg1);
@@ -387,7 +394,7 @@ footer ul li a:hover {
 
 @media screen and (max-width:1024px) {
     container {
-        width: var(--container-width-md)
+        width: var(--container-width-md);
     }
     h1 {
         font-size: 2.2rem;
@@ -483,7 +490,7 @@ footer ul li a:hover {
 
     .header__container {
         gap: 0;
-        padding-bottom: 3rem;
+        padding-bottom: 200px;
     }
     /* ===== categories ====== */
     .categories {
@@ -532,12 +539,11 @@ footer ul li a:hover {
 }
 /* ====== NAVBAR =====*/
     header {
-        height: 100vh;
+        height: 100%;
     }
     .header__container {
         grid-template-columns: 1fr;
         text-align: center;
-        margin-top: 0;
 
     }
     .header__left p {
